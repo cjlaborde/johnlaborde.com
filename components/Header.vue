@@ -74,16 +74,16 @@
     </div>
 </template>
 
-
 <script lang="ts">
+import { defineComponent, ref } from '@nuxtjs/composition-api';
 
-    import Vue from 'vue'
-    import Component from 'vue-class-component'
+  export default defineComponent({
+      setup() {
+        const open = ref(false);
+        const siteName = ref("John La Borde");
+        const email = ref("info@johnlaborde.com");
 
-    @Component
-    export default class Header extends Vue {
-         open: boolean = false;
-         siteName: string = "John La Borde";
-         email: string = "info@johnlaborde.com";
-    }
+        return { siteName, open, email };
+      }
+  });
 </script>

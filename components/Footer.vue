@@ -43,17 +43,14 @@
     </footer>
 </template>
 
-
-
-
-
-
 <script lang="ts">
-    import Vue from 'vue'
-    import Component from 'vue-class-component'
+import { defineComponent, ref } from '@nuxtjs/composition-api';
 
-    @Component
-    export default class Footer extends Vue {
-        siteName: string = "John La Borde";
-    }
+  export default defineComponent({
+      setup() {
+      const siteName = ref("John La Borde");
+
+      return { siteName };
+      }
+  });
 </script>
