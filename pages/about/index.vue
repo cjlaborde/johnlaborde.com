@@ -1,6 +1,7 @@
 <template>
     <div class="prose prose-lg text-gray-500 p-5 rounded mx-auto">
-      <nuxt-content :document="index" />
+        About page
+      <nuxt-content :document="about" />
     </div>
 </template>
 
@@ -12,9 +13,9 @@ import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api';
       setup() {
         const { $content } = useContext();
   
-        const index = useAsync(() => $content('index').fetch());
+        const about = useAsync(() => $content('about').fetch());
 
-        return { index };
+        return { about };
       }
   });
 </script>

@@ -1,26 +1,17 @@
 <template>
-    <div style="min-height: 192px;">
+    <div>
     <nav class="bg-white shadow">
       <div class="max-w-7xl mx-auto px-2 sm:px-4 lg:px-8">
         <div class="flex justify-between h-16">
           <div class="flex px-2 lg:px-0">
             <div class="flex-shrink-0 flex items-center">
               <h3 class="text-lg"> {{ siteName }}</h3>
-                <img class="ml-4 h-8 w-8 rounded-full" src="https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4" alt="">
+                <img class="ml-4 h-8 w-8 rounded-full" :src="avatar" alt="">
             </div>
             <div class="hidden lg:ml-6 lg:flex lg:space-x-8">
-              <a href="#" class="border-green-400 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-               Articles
-              </a>
-              <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Projects
-              </a>
-              <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Contact
-              </a>
-              <a href="#" class="border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                About
-              </a>
+              <nuxt-link :to="{ name: 'about' }" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">About</nuxt-link>
+              <nuxt-link :to="{ name: 'articles' }" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Articles</nuxt-link>
+             <nuxt-link :to="{ name: 'projects' }" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Projects</nuxt-link>
             </div>
           </div>
           <div class="flex-1 flex items-center justify-center px-2 lg:ml-6 lg:justify-end">
@@ -53,15 +44,14 @@
 
       <div x-description="Mobile menu, show/hide based on menu state." class="lg:hidden" id="mobile-menu" v-if="open">
         <div class="pt-2 pb-3 space-y-1">
-          <a href="#" class="bg-green-400 border-green-500 text-white block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Articles</a>
-          <a href="#" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Projects</a>
-          <a href="#" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Contact</a>
-          <a href="#" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">About</a>
+          <nuxt-link :to="{ name: 'about' }" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">About</nuxt-link>
+          <nuxt-link :to="{ name: 'articles' }" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">articles</nuxt-link>
+          <nuxt-link :to="{ name: 'projects' }" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Projects</nuxt-link>
         </div>
         <div class="pt-4 pb-3 border-t border-gray-200">
           <div class="flex items-center px-4">
             <div class="flex-shrink-0">
-              <img class="h-10 w-10 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=256&amp;h=256&amp;q=80" alt="">
+              <img class="h-10 w-10 rounded-full" :src="avatar" alt="">
             </div>
             <div class="ml-3">
               <div class="text-base font-medium text-gray-800">{{ siteName }}</div>
@@ -82,8 +72,15 @@ import { defineComponent, ref } from '@nuxtjs/composition-api';
         const open = ref(false);
         const siteName = ref("John La Borde");
         const email = ref("info@johnlaborde.com");
+        const avatar = ref("https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4");
 
-        return { siteName, open, email };
+        return { siteName, open, email, avatar };
       }
   });
 </script>
+
+<style scoped>
+.nuxt-link-active {
+  @apply border-green-400 text-gray-900 border-b-2;
+}
+</style>
