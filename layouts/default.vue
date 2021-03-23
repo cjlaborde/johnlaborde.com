@@ -11,8 +11,8 @@
 <style scoped>
 .container {
   margin: 0 auto;
-  min-height: 75vh;
-  display: flex;
+  min-height: 85vh;
+  margin-top: 5rem;
   justify-content: center;
   align-items: center;
   text-align: center;

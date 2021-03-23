@@ -9,7 +9,7 @@
                 <img class="ml-4 h-8 w-8 rounded-full" :src="avatar" alt="">
             </div>
             <div class="hidden lg:ml-6 lg:flex lg:space-x-8">
-              <nuxt-link :to="{ name: 'about' }" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">About</nuxt-link>
+              <nuxt-link :to="{ name: 'index' }" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">About</nuxt-link>
               <nuxt-link :to="{ name: 'articles' }" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Articles</nuxt-link>
              <nuxt-link :to="{ name: 'projects' }" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">Projects</nuxt-link>
             </div>
@@ -44,7 +44,7 @@
 
       <div x-description="Mobile menu, show/hide based on menu state." class="lg:hidden" id="mobile-menu" v-if="open">
         <div class="pt-2 pb-3 space-y-1">
-          <nuxt-link :to="{ name: 'about' }" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">About</nuxt-link>
+          <nuxt-link :to="{ name: 'index' }" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">About</nuxt-link>
           <nuxt-link :to="{ name: 'articles' }" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">articles</nuxt-link>
           <nuxt-link :to="{ name: 'projects' }" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 text-base font-medium">Projects</nuxt-link>
         </div>
@@ -80,7 +80,7 @@ import { defineComponent, ref } from '@nuxtjs/composition-api';
 </script>
 
 <style scoped>
-.nuxt-link-active {
+.nuxt-link-exact-active {
   @apply border-green-400 text-gray-900 border-b-2;
 }
 </style>
