@@ -2,20 +2,19 @@
   <div class="p-8">
     <div class="lg:flex mx-auto">
       <div class="space-y-12 sm:divide-y sm:divide-gray-200 sm:space-y-0 sm:-mt-8" x-max="1">
-          <div class="sm:p-8">
             <div class="flex-none sm:flex">
               <!-- Image -->
               <div class="">
-                <img class="w-1/2 md:w-full mx-auto mb-5" :src="about.image" alt="">
+                <img class="h-32 w-32 lg:h-48 lg:w-48 mx-auto mb-5" :src="avatar" alt="">
               </div>
 
               <div class="pl-5 lg:pl-15">
                 <div class="space-y-4">
                   <div class="text-lg leading-6 font-medium space-y-1 md:text-left">
-                    <h3>John La Borde</h3>
-                    <p class="text-gray-600">Full Stack Developer</p>
+                    <h3 class="text-2xl">John La Borde</h3>
+                    <p class="text-gray-600 text-lg">Full Stack Developer</p>
                   </div>
-                  <div class="text-lg text-left">
+                  <div class="text-lg text-left prose">
                     <p class="text-gray-500">
                       <nuxt-content :document="about" />
                     </p>
@@ -45,21 +44,20 @@
           </div>
         </div>
     </div>
-    </div>
 </template>
 
 
 <script lang="ts">
-import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api';
+import { defineComponent, useContext, useAsync, ref } from '@nuxtjs/composition-api';
 
   export default defineComponent({
       setup() {
         const { $content } = useContext();
   
         const about = useAsync(() => $content('about').fetch());
-        const about2 = useAsync(() => $content('about2').fetch());
+        const avatar = ref('https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4');
 
-        return { about, about2 };
+        return { about, avatar };
       }
   });
 </script>

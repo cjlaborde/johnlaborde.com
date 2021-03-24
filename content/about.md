@@ -1,24 +1,13 @@
 ---
-title: Article One
-description: 'Empower your NuxtJS application with @nuxt/content module: write in a content/ directory and fetch your Markdown, JSON, YAML and CSV files through a MongoDB like API, acting as a Git-based Headless CMS.'
+title: About John La Borde
+description: 'My about page where I talk about myself as a software developer'
 image: 'https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4'
-tags: ['VueJS', 'Nuxt']
-published: '2020-09-01'
+tags: ['John La Borde', 'porfolio', 'about', 'software developer']
+published: '2021-03-23'
 ---
-Life is Study. That is the Matra that every Web developer should have in this Ever Growing & Evolving industry. I study 7 days a week 6 hours per day Without Fail. Every single day code and learn. Holiday or feeling sick will not stop my daily habit. My aim is to be a top Performer. According to Price law only 10% Perform 50% of the work. My aim is to be part of that 10%.
 
-My main interest is creating applications or websites for businesses.
-Businesses sites require an unique form of engineering.
-1) They demand to be highly Secure and bug free sites & applications.
-2) Sites need to be designed with the User mindset in mind. they have to be Easy to use and as minimum mental overload for your clients to be accessible to all ages. In this modern word where attention is a premium. Having a badly designed site will servery reduce your ROI.
-3) Test and measure every detail for constantly evolving to create the most
+I worked for years as a marketeer and business owner. Then wanted to make a website the exact way I envision it and became obsessed with learning web development. Years latter I became a competent web developer than has a strong foundation in business and marketing.
+I have the skill set to combine both business and marketing skills.
 
-
-
-
-
-
-
-
-
-
+<br>
+A “technical marketer” is an advertising executive with knowledge and skills that extend far beyond coming up with clever logos and commercials. They know how to code, build scripts, work with APIs and manipulate statistical data. They can automate sales processes and discover trends in customer behavior.
