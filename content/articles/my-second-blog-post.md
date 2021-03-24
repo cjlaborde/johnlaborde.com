@@ -1,8 +1,8 @@
 ---
-title: My first Blog Post
+title: My second Blog Post
 description: Learning how to use @nuxt/content to create a blog
 image: 'https://res.cloudinary.com/redfern-web/image/upload/v1599840408/redfern-dev/png/nuxt.png'
-alt: my first blog post
+alt: my second blog post
 tags: ['VueJS', 'Nuxt']
 published: '2020-09-02'
 author:
@@ -29,9 +29,9 @@ This is some more info Deff
 This is some more info
 
 
-# My first blog post
+# My second blog post
 
-Welcome to my first blog post using content module
+Welcome to my second blog post using content module
 
 <div class="bg-blue-500 text-white p-4 mb-4">
   This is HTML inside markdown that has a class of note

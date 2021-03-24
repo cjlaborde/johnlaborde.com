@@ -5,7 +5,7 @@
             <div class="flex-none sm:flex">
               <!-- Image -->
               <div class="">
-                <img class="h-32 w-32 lg:h-48 lg:w-48 mx-auto mb-5" :src="avatar" alt="">
+                <img class="h-32 w-32 lg:h-48 lg:w-48 mx-auto mb-5" :src="avatar" alt="display picture">
               </div>
 
               <div class="pl-5 lg:pl-15">
