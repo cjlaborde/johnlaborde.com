@@ -6,9 +6,9 @@ alt: my second blog post
 tags: ['VueJS', 'Nuxt']
 published: '2020-09-02'
 author:
-  name: Benjamin
-  bio: All about Benjamin
-  image: https://images.unsplash.com/photo-1600267185393-e158a98703de?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=195&q=80
+  name: John
+  bio: All about John
+  image: https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4
 ---
 
 ## This is a heading Leppard

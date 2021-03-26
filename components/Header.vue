@@ -70,7 +70,7 @@ import { defineComponent, ref } from '@nuxtjs/composition-api';
   export default defineComponent({
       setup() {
         const open = ref(false);
-        const siteName = ref("John La Borde");
+        const siteName = ref("");
         const email = ref("info@johnlaborde.com");
         const avatar = ref("https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4");
 
