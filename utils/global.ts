@@ -10,7 +10,7 @@ export default {
     githubURL: 'https://github.com/cjlaborde',
     facebookURL: '',
     instagramURL: '',
-    linkedInURL: '',
+    linkedInURL: 'https://www.linkedin.com/in/christian-la-borde/',
     siteTitle: 'John La Borde blog',
     siteDesc:
       'A site that specialize combining web development with marketing.',

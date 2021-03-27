@@ -22,7 +22,6 @@ import { defineComponent, useContext, computed, useStatic } from '@nuxtjs/compos
     setup() {
       const { $content, params } = useContext();
       const slug = computed(() => params.value.slug);
-
       const article = useStatic(async (slug) => $content('articles', slug).fetch<any>(), slug, 'articles');
 
       return { article };

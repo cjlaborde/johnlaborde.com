@@ -6,7 +6,7 @@
           <div class="flex px-2 lg:px-0">
             <div class="flex-shrink-0 flex items-center">
               <h3 class="text-lg"> {{ siteName }}</h3>
-                <img class="ml-4 h-8 w-8 rounded-full" :src="avatar" alt="">
+                <img class="ml-4 h-8 w-8 rounded-full" :src="avatar" :alt="avatarAlt">
             </div>
             <div class="hidden lg:ml-6 lg:flex lg:space-x-8">
               <nuxt-link :to="{ name: 'index' }" class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-500 hover:text-gray-700">About</nuxt-link>
@@ -51,7 +51,7 @@
         <div class="pt-4 pb-3 border-t border-gray-200">
           <div class="flex items-center px-4">
             <div class="flex-shrink-0">
-              <img class="h-10 w-10 rounded-full" :src="avatar" alt="">
+              <img class="h-10 w-10 rounded-full" :src="avatar" :alt="avatarAlt">
             </div>
             <div class="ml-3">
               <div class="text-base font-medium text-gray-800">{{ siteName }}</div>
@@ -69,14 +69,15 @@ import { defineComponent, ref } from '@nuxtjs/composition-api';
 import global from '@/utils/global';
 
   export default defineComponent({
-      setup() {
-        const open = ref(false);
-        const siteName = ref(global.siteName);
-        const email = ref(global.email);
-        const avatar = ref(global.avatar);
+    setup() {
+      const open = ref(false);
+      const siteName = ref(global.siteName);
+      const email = ref(global.email);
+      const avatar = ref(global.avatar);
+      const avatarAlt = ref(global.avatarAlt);
 
-        return { siteName, open, email, avatar };
-      }
+      return { siteName, open, email, avatar, avatarAlt };
+    }
   });
 </script>
 
