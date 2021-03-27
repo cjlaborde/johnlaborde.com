@@ -1,3 +1,6 @@
+import global from './utils/global';
+import getRoutes from './utils/getRoutes';
+
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -32,13 +35,15 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     // https://composition-api.nuxtjs.org/
-    '@nuxtjs/composition-api'
+    '@nuxtjs/composition-api',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://github.com/nuxt-community/sitemap-module
+    '@nuxtjs/sitemap',
   ],
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
@@ -47,11 +52,19 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 
+  sitemap: {
+    // hostname: process.env.BASE_URL, // https://www.yoursite.com
+    hostname: global.siteUrl, // https://www.yoursite.com
+    routes() {
+      return getRoutes();
+    },
+  },
+
   server: {
     host: '0.0.0.0',
-    port: 5500
+    port: 5500,
   },
   // router: {
   //   linkActiveClass: 'active-link'
-  // }  
-}
+  // }
+};
