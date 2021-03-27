@@ -66,13 +66,14 @@
 
 <script lang="ts">
 import { defineComponent, ref } from '@nuxtjs/composition-api';
+import global from '@/utils/global';
 
   export default defineComponent({
       setup() {
         const open = ref(false);
-        const siteName = ref("");
-        const email = ref("info@johnlaborde.com");
-        const avatar = ref("https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4");
+        const siteName = ref(global.siteName);
+        const email = ref(global.email);
+        const avatar = ref(global.avatar);
 
         return { siteName, open, email, avatar };
       }

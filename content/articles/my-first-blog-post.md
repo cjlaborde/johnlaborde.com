@@ -1,6 +1,6 @@
 ---
 title: My first Blog Post
-description: Learning how to use @nuxt/content to create a blog
+description: Learning how to use Javascript
 image: 'https://res.cloudinary.com/redfern-web/image/upload/v1599840408/redfern-dev/png/nuxt.png'
 alt: my first blog post
 tags: ['VueJS', 'Nuxt']
