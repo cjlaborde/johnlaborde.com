@@ -11,10 +11,8 @@
                 <h3 class="text-2xl">{{ author }}</h3>
                 <p class="text-gray-600 text-lg">Full Stack Developer</p>
               </div>
-              <div class="text-lg text-left prose">
-               <p class="text-gray-500">
+              <div class="text-lg text-left prose text-gray-500">
                   <nuxt-content :document="about" />
-                </p>
                 <h4 class="font-medium mt-10">Contact me at</h4>
               </div>
               <div class="flex justify-left space-x-6 md:order-2">
