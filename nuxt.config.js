@@ -1,22 +1,47 @@
 import global from './utils/global';
 import getRoutes from './utils/getRoutes';
+import getSiteMeta from './utils/getSiteMeta';
+
+const meta = getSiteMeta();
 
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  // Global page headers: https://go.nuxtjs.dev/config-head
+  // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'johnlaborde.com',
     htmlAttrs: {
       lang: 'en',
     },
+    title: 'Nuxt Basic Blog',
     meta: [
+      ...meta,
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: global.siteDesc || '',
+      },
+      { property: 'og:site_name', content: global.siteName || '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content: global.siteDesc || '',
+      },
+      { property: 'og:image:width', content: '740' },
+      { property: 'og:image:height', content: '300' },
+      { name: 'twitter:site', content: global.siteName || '' },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        hid: 'canonical',
+        rel: 'canonical',
+        href: global.siteUrl,
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
