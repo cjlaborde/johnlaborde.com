@@ -18,6 +18,21 @@
       >
         <nuxt-content :document="article" />
       </div>
+
+      <h3 class="px-1/12 lg:px-1/6 bold text-gray-800 my-8 text-lg">Tags:</h3>
+      <ul class="flex justify-start px-1/12 lg:px-1/6">
+        <li
+          v-for="tag in article.tags"
+          :key="tag"
+          class="text-center mr-2 mb-2 p-1 border border-gray-200 rounded"
+        >
+          <nuxt-link
+            :to="{ name: 'tags-tag', params: { tag: tag.toLowerCase() } }"
+            class="text-sm hover:text-gray-800 text-gray-500"
+            >{{ tag }}</nuxt-link
+          >
+        </li>
+      </ul>
     </div>
   </div>
 </template>

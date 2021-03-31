@@ -1,5 +1,5 @@
 export default {
-  siteUrl: 'https://johnlaborde.com',
+  siteUrl: 'http://172.24.0.2:39131',
   siteName: '',
   author: 'John La Borde',
   email: 'info@johnlaborde.com',

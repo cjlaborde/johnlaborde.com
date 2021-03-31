@@ -5,7 +5,7 @@
       :key="article.slug"
       class="mb-12 bg-white p-5 rounded shadow"
     >
-      <NuxtLink
+      <nuxt-link
         :to="{ name: 'articles-slug', params: { slug: article.slug } }"
         class="md:grid md:gap-4 md:grid-cols-2"
       >
@@ -24,7 +24,20 @@
             Read more<span class="text-green-400">&hellip;</span>
           </p>
         </div>
-      </NuxtLink>
+      </nuxt-link>
+      <ul class="flex justify-end">
+        <li
+          v-for="tag in article.tags"
+          :key="tag"
+          class="text-center mr-2 mb-2 p-1 border border-gray-200 rounded"
+        >
+          <nuxt-link
+            :to="{ name: 'tags-tag', params: { tag: tag.toLowerCase() } }"
+            class="text-sm hover:text-gray-800 text-gray-500"
+            >{{ tag }}</nuxt-link
+          >
+        </li>
+      </ul>
     </li>
   </ul>
 </template>

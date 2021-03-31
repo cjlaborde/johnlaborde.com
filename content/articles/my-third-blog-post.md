@@ -3,7 +3,7 @@ title: My third Blog Post
 description: Learning how to use @nuxt/content to create a blog
 image: 'https://res.cloudinary.com/redfern-web/image/upload/v1599840408/redfern-dev/png/nuxt.png'
 alt: my third blog post
-tags: ['VueJS', 'Nuxt']
+tags: ['VueJS']
 published: '2020-09-02'
 author:
   name: John

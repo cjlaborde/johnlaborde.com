@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Tag />
     <ArticleList :articles="articles" />
   </div>
 </template>
@@ -13,7 +14,7 @@ export default defineComponent({
 
     const articles = useAsync(() =>
       $content('articles')
-        .only(['title', 'description', 'image', 'slug', 'published'])
+        .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
         .sortBy('published', 'desc')
         .fetch()
     );
