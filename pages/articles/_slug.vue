@@ -33,6 +33,7 @@
           >
         </li>
       </ul>
+      <Author :author="article.author" />
     </div>
   </div>
 </template>

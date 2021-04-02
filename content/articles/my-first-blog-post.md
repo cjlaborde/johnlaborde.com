@@ -6,8 +6,9 @@ alt: my first blog post
 tags: ['VueJS', 'Nuxt','Javascript']
 published: '2020-09-02'
 author:
-  name: John
-  bio: All about John
+  name: John La Borde
+  bio: I work in the cloud with a strong focus on serverless and API lifecycle. Pushing the limits on API design, standardization, and automation.
+  profession: Full Stack Developer
   image: https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4
 ---
 
