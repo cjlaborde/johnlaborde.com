@@ -16,10 +16,13 @@
           class="mb-4 border rounded"
         />
         <div>
-          <h2 class="font-bold text-gray-900 text-2xl mb-2">
+          <h2 class="font-bold text-gray-900 text-2xl">
             {{ article.title }}
           </h2>
-          <p class="text-lg">{{ article.description }}</p>
+          <span class="font-semibold text-sm">
+            published: {{ $dayjs(article.published).fromNow() }}
+          </span>
+          <p class="text-base mt-3">{{ article.description }}</p>
           <p class="font-bold text-green-400 mt-2">
             Read more<span class="text-green-400">&hellip;</span>
           </p>

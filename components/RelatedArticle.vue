@@ -13,6 +13,9 @@
         <div class="px-3">
           <NuxtLink :to="`/articles/${article.slug}`">
             <h3 class="text-gray-700 font-bold text-lg">{{ article.title }}</h3>
+            <span class="font-semibold text-xs text-gray-600">
+              published: {{ $dayjs(article.published).fromNow() }}
+            </span>
             <p class="text-gray-600 text-sm">
               {{ article.description }}
             </p>

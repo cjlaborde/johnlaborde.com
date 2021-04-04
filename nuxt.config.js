@@ -69,7 +69,15 @@ export default {
     '@nuxt/content',
     // https://github.com/nuxt-community/sitemap-module
     '@nuxtjs/sitemap',
+    // https://github.com/nuxt-community/dayjs-module
+    '@nuxtjs/dayjs',
   ],
+
+  dayjs: {
+    locales: ['en'],
+    defaultLocale: 'en',
+    plugins: ['relativeTime'],
+  },
 
   // Content module configuration: https://go.nuxtjs.dev/config-content
   content: {

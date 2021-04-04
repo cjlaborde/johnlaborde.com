@@ -4,11 +4,14 @@
       <div class="text-lg max-w-prose mx-auto">
         <h1>
           <span
-            class="block text-base text-center text-green-400 font-semibold tracking-wide uppercase"
+            class="block text-base text-4xl text-center text-black font-semibold tracking-wide capitalize"
             >{{ article.title }}</span
           >
+          <span class="block font-semibold text-xs text-green-400 text-center">
+            published: {{ $dayjs(article.published).fromNow() }}
+          </span>
           <span
-            class="mt-2 block text-3xl text-center leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl"
+            class="mt-2 block text-lg text-center leading-8 font-medium tracking-tight text-gray-600"
             >{{ article.description }}</span
           >
         </h1>
@@ -71,7 +74,6 @@ export default defineComponent({
       async (tag: string) =>
         await $content('articles')
           .where({ tags: { $contains: [tag] } })
-          // ..where({ title: 'Home' })
           // .where({ slug: { $ne: params.value.slug } })
           .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
           .sortBy('published', 'desc')
