@@ -19,7 +19,11 @@
         <nuxt-content :document="article" />
       </div>
 
-      <h3 class="px-1/12 lg:px-1/6 bold text-gray-800 my-8 text-lg">Tags:</h3>
+      <h3
+        class="px-1/12 lg:px-1/6 bold text-gray-800 my-8 text-lg font-semibold"
+      >
+        Tags:
+      </h3>
       <ul class="flex justify-start px-1/12 lg:px-1/6">
         <li
           v-for="tag in article.tags"
@@ -34,6 +38,7 @@
         </li>
       </ul>
       <Author :author="article.author" />
+      <RelatedArticle :related-articles="relatedArtices" />
     </div>
   </div>
 </template>
@@ -53,10 +58,35 @@ export default defineComponent({
   setup() {
     const { $content, params, route } = useContext();
     const slug = computed(() => params.value.slug);
+
     const article = useStatic(
       async (slug) => await $content('articles', slug).fetch<any>(),
       slug,
       'articles'
+    );
+
+    const tag = computed(() => article.value?.tags[0]);
+
+    const articlesByTags = useStatic(
+      async (tag: string) =>
+        await $content('articles')
+          .where({ tags: { $contains: [tag] } })
+          // ..where({ title: 'Home' })
+          // .where({ slug: { $ne: params.value.slug } })
+          .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
+          .sortBy('published', 'desc')
+          .limit(4)
+          .fetch(),
+      tag,
+      'articles'
+    );
+
+    const relatedArtices = computed(
+      () =>
+        articlesByTags.value?.filter(
+          (articlesByTag: { slug: string }) =>
+            articlesByTag.slug !== route.value.params.slug
+        ) ?? []
     );
 
     const metaData = {
@@ -100,7 +130,8 @@ export default defineComponent({
         },
       ],
     }));
-    return { article };
+
+    return { article, relatedArtices };
   },
   head: {},
 });

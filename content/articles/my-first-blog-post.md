@@ -3,7 +3,7 @@ title: My first Blog Post
 description: Learning how to use Javascript
 image: 'https://res.cloudinary.com/redfern-web/image/upload/v1599840408/redfern-dev/png/nuxt.png'
 alt: my first blog post
-tags: ['VueJS', 'Nuxt','Javascript']
+tags: ['Javascript', 'VueJS', 'Nuxt']
 published: '2020-09-02'
 author:
   name: John La Borde
