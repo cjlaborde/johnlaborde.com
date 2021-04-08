@@ -3,19 +3,19 @@
     <li
       v-for="article of articles"
       :key="article.slug"
-      class="mb-12 bg-white p-5 rounded shadow"
+      class="mb-12 bg-white rounded shadow"
     >
       <nuxt-link
         :to="{ name: 'articles-slug', params: { slug: article.slug } }"
-        class="md:grid md:gap-4 md:grid-cols-2"
+        class="flex"
       >
         <img
           v-if="article.image"
           :src="article.image"
           :alt="article.alt"
-          class="mb-4 border rounded"
+          class="border rounded h-80 w-80 object-cover"
         />
-        <div>
+        <div class="m-auto">
           <h2 class="font-bold text-gray-900 text-2xl">
             {{ article.title }}
           </h2>
