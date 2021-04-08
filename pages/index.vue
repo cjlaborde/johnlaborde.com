@@ -53,7 +53,3 @@ export default defineComponent({
   },
 });
 </script>
-
-<style scoped>
-@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500|Roboto:400,700');
-</style>
