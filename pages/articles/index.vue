@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Tag />
+    <div class="mb-10">
+      <Tag />
+    </div>
     <ArticleList :articles="articles" />
     <infinite-loading spinner="circles" @infinite="infiniteScroll">
       <div slot="no-more"></div>
@@ -16,6 +18,7 @@ export default {
       perPage: 3,
       articles: [],
       pastLegth: 0,
+      searchQuery: '',
     };
   },
   async fetch() {
@@ -24,6 +27,18 @@ export default {
       .sortBy('published', 'desc')
       .limit(this.perPage)
       .fetch();
+  },
+  watch: {
+    async searchQuery(searchQuery) {
+      if (!searchQuery) {
+        this.articles = [];
+        return;
+      }
+      this.articles = await this.$content('articles')
+        .limit(6)
+        .search(searchQuery)
+        .fetch();
+    },
   },
   methods: {
     infiniteScroll($state) {
