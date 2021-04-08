@@ -7,7 +7,7 @@
         All Tags
       </h2>
     </div>
-    <ul class="flex justify-center">
+    <ul class="flex justify-center flex-wrap">
       <li
         v-for="tag in tags"
         :key="tag"

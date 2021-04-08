@@ -7,15 +7,15 @@
     >
       <nuxt-link
         :to="{ name: 'articles-slug', params: { slug: article.slug } }"
-        class="flex"
+        class="flex-none sm:flex"
       >
         <img
           v-if="article.image"
           :src="article.image"
           :alt="article.alt"
-          class="border rounded h-80 w-80 object-cover"
+          class="border rounded h-80 w-full sm:w-80 object-cover"
         />
-        <div class="m-auto">
+        <div class="m-auto p-3">
           <h2 class="font-bold text-gray-900 text-2xl">
             {{ article.title }}
           </h2>
