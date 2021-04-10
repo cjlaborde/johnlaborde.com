@@ -19,21 +19,22 @@
   </div>
 </template>
 
-<script>
-export default {
-  data() {
-    return {
-      searchQuery: '',
-      articles: [],
-    };
-  },
-  methods: {
-    submit() {
-      this.$router.push({
+<script lang="ts">
+import { defineComponent, useRouter, ref } from '@nuxtjs/composition-api';
+
+export default defineComponent({
+  setup() {
+    const route = useRouter();
+    const searchQuery = ref('');
+
+    function submit() {
+      route.push({
         name: 'search',
-        query: { keyword: this.searchQuery },
+        query: { keyword: searchQuery.value },
       });
-    },
+    }
+
+    return { searchQuery, submit };
   },
-};
+});
 </script>

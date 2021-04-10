@@ -56,20 +56,16 @@ import {
 } from '@nuxtjs/composition-api';
 import global from '@/utils/global';
 import getSiteMeta from '@/utils/getSiteMeta';
-
 export default defineComponent({
   setup() {
     const { $content, params, route } = useContext();
     const slug = computed(() => params.value.slug);
-
     const article = useStatic(
       async (slug) => await $content('articles', slug).fetch<any>(),
       slug,
       'articles'
     );
-
     const tag = computed(() => article.value?.tags[0]);
-
     const articlesByTags = useStatic(
       async (tag: string) =>
         await $content('articles')
@@ -82,7 +78,6 @@ export default defineComponent({
       tag,
       'articles'
     );
-
     const relatedArtices = computed(
       () =>
         articlesByTags.value?.filter(
@@ -90,7 +85,6 @@ export default defineComponent({
             articlesByTag.slug !== route.value.params.slug
         ) ?? []
     );
-
     const metaData = {
       type: 'article',
       title: article.value?.title,
@@ -99,7 +93,6 @@ export default defineComponent({
       mainImage: article.value?.image,
     };
     const meta = computed(() => getSiteMeta(metaData));
-
     useMeta(() => ({
       title: article.value?.title,
       meta: [
@@ -132,7 +125,6 @@ export default defineComponent({
         },
       ],
     }));
-
     return { article, relatedArtices };
   },
   head: {},

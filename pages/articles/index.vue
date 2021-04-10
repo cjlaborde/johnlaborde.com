@@ -13,25 +13,19 @@
 </template>
 
 <script lang="ts">
-import {
-  defineComponent,
-  useContext,
-  useFetch,
-  ref,
-} from '@nuxtjs/composition-api';
+import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api';
 
 export default defineComponent({
   name: 'ArticleListPage',
   setup() {
     const { $content } = useContext();
-    const articles = ref();
 
-    useFetch(async () => {
-      articles.value = await $content('articles')
+    const articles = useAsync(() =>
+      $content('articles')
         .only(['title', 'description', 'image', 'slug', 'published'])
         .sortBy('published', 'desc')
-        .fetch();
-    });
+        .fetch()
+    );
 
     return { articles };
   },

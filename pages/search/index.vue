@@ -14,35 +14,38 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'ArticleListPage',
-  data() {
-    return {
-      articles: [],
-    };
+<script lang="ts">
+import {
+  defineComponent,
+  useContext,
+  useFetch,
+  useRoute,
+  computed,
+  watch,
+  ref,
+} from '@nuxtjs/composition-api';
+
+export default defineComponent({
+  setup() {
+    const { $content } = useContext();
+    const articles = ref('');
+    const route = useRoute();
+
+    const searchQuery = computed(() => route.value.query.keyword);
+
+    const { fetch } = useFetch(async () => {
+      articles.value = await $content('articles')
+        .only(['title', 'description', 'image', 'slug', 'published'])
+        .sortBy('published', 'desc')
+        .search(searchQuery.value)
+        .fetch();
+    });
+
+    watch(searchQuery, () => {
+      fetch();
+    });
+
+    return { articles };
   },
-  async fetch() {
-    console.log(this.searchQuery);
-    if (!this.searchQuery) {
-      this.articles = [];
-      return;
-    }
-    this.articles = await this.$content('articles')
-      .only(['title', 'description', 'image', 'slug', 'published'])
-      .sortBy('published', 'desc')
-      .search(this.searchQuery)
-      .fetch();
-  },
-  computed: {
-    searchQuery() {
-      return this.$route.query.keyword;
-    },
-  },
-  watch: {
-    async searchQuery(searchQuery) {
-      this.$fetch();
-    },
-  },
-};
+});
 </script>
