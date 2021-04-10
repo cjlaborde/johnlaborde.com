@@ -32,7 +32,7 @@ import { defineComponent } from '@nuxtjs/composition-api';
 export default defineComponent({
   props: {
     relatedArticles: {
-      type: Array,
+      type: Object,
       required: true,
     },
   },

@@ -36,7 +36,7 @@ export default defineComponent({
         await $content('articles')
           .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
           .sortBy('published', 'desc')
-          .fetch<Object>()
+          .fetch()
     );
 
     const articlesByTag = computed(() =>

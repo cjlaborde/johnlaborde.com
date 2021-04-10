@@ -51,8 +51,8 @@ import { defineComponent } from '@nuxtjs/composition-api';
 export default defineComponent({
   props: {
     articles: {
-      type: Array,
-      default: Array,
+      type: Object,
+      required: true,
     },
   },
 });

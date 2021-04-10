@@ -20,7 +20,7 @@ export default defineComponent({
         .where({ 'author.name': route.value.params.author })
         .without('body')
         .sortBy('createdAt', 'asc')
-        .fetch<object>()
+        .fetch<any>()
     );
 
     return { articles };

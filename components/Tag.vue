@@ -41,7 +41,7 @@ export default defineComponent({
     }
 
     const articles = useAsync(
-      async () => await $content('articles').only(['tags']).fetch<Object>()
+      async () => await $content('articles').only(['tags']).fetch()
     );
 
     const tags = computed(

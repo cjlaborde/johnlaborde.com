@@ -28,7 +28,7 @@ import {
 export default defineComponent({
   setup() {
     const { $content } = useContext();
-    const articles = ref('');
+    const articles = ref<any>([]);
     const route = useRoute();
 
     const searchQuery = computed(() => route.value.query.keyword);
