@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tags/web%20development", {data:[{}],fetch:{},mutations:void 0});

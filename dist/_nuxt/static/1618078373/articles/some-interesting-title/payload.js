@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/articles/some-interesting-title", {data:[{}],fetch:{},mutations:void 0});
