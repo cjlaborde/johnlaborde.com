@@ -1,11 +1,11 @@
 <template>
-  <div>
+  <div v-if="articlesByTag">
     <Tag />
     <div class="flex justify-center">
       <h2
         class="text-center text-3xl mb-4 capitalize text-gray-700 inline-block mx-auto px-2"
       >
-        Tag: {{ routeTag }}
+        Tag: {{ routeTag }} ({{ articlesByTag.length }})
       </h2>
     </div>
     <ArticleList :articles="articlesByTag" />

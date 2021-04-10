@@ -1,11 +1,12 @@
 <template>
   <div>
     <div class="flex justify-center">
-      <h2
+      <nuxt-link
+        :to="{ name: 'articles' }"
         class="text-center text-lg mb-4 uppercase text-gray-700 font-semibold inline-block mx-auto px-2"
       >
         All Tags
-      </h2>
+      </nuxt-link>
     </div>
     <ul class="flex justify-center flex-wrap">
       <li
