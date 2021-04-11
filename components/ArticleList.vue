@@ -3,7 +3,7 @@
     <li
       v-for="article of articles"
       :key="article.slug"
-      class="mb-12 bg-white rounded shadow"
+      class="mb-12 bg-white rounded shadow pl-0 pt-0 sm:pl-10 sm:pt-10"
     >
       <nuxt-link
         :to="{ name: 'articles-slug', params: { slug: article.slug } }"
@@ -28,7 +28,7 @@
           </p>
         </div>
       </nuxt-link>
-      <ul class="flex justify-end">
+      <ul class="flex justify-end p-3">
         <li
           v-for="tag in article.tags"
           :key="tag"

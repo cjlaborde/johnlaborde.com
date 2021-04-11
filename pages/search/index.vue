@@ -35,7 +35,7 @@ export default defineComponent({
 
     const { fetch } = useFetch(async () => {
       articles.value = await $content('articles')
-        .only(['title', 'description', 'image', 'slug', 'published'])
+        .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
         .sortBy('published', 'desc')
         .search(searchQuery.value)
         .fetch();
