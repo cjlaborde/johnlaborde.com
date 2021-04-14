@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/search", {data:[{}],fetch:{"SearchPage:0":{articles:[]}},mutations:void 0});

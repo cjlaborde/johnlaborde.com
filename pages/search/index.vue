@@ -26,7 +26,6 @@ import {
 } from '@nuxtjs/composition-api';
 
 export default defineComponent({
-  name: 'Search',
   setup() {
     const { $content } = useContext();
     const articles = ref<any>([]);
@@ -35,7 +34,7 @@ export default defineComponent({
     const searchQuery = computed(() => route.value.query.keyword);
 
     const { fetch } = useFetch(async () => {
-      if (!searchQuery.value) {
+      if (searchQuery.value === '') {
         articles.value = [];
         return;
       }
