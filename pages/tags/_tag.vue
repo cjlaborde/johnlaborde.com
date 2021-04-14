@@ -23,6 +23,7 @@ import {
 } from '@nuxtjs/composition-api';
 
 export default defineComponent({
+  name: 'TagPage',
   setup() {
     const { $content, route } = useContext();
     const routeTag = route.value.params.tag;

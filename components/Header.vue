@@ -105,6 +105,7 @@ import OpenMenu from '~/components/svg/OpenMenu.vue';
 import CloseMenu from '~/components/svg/CloseMenu.vue';
 
 export default defineComponent({
+  name: 'Header',
   components: {
     OpenMenu,
     CloseMenu,

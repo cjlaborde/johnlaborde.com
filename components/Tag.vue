@@ -33,6 +33,7 @@ import {
 } from '@nuxtjs/composition-api';
 
 export default defineComponent({
+  name: 'Tag',
   setup() {
     const { $content } = useContext();
 

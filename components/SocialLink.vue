@@ -18,6 +18,7 @@ import Facebook from '~/components/svg/Facebook.vue';
 import Instagram from '~/components/svg/Instagram.vue';
 
 export default defineComponent({
+  name: 'SocialLink',
   components: {
     Github,
     LinkedIn,

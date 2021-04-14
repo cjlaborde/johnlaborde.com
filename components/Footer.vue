@@ -19,10 +19,11 @@ import { defineComponent, ref } from '@nuxtjs/composition-api';
 import global from '@/utils/global';
 
   export default defineComponent({
-      setup() {
-      const siteName = ref(global.siteName);
+    name: "Footer",
+    setup() {
+    const siteName = ref(global.siteName);
 
-      return { siteName };
-      }
+    return { siteName };
+    }
   });
 </script>

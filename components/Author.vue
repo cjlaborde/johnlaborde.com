@@ -27,6 +27,7 @@
 import { defineComponent } from '@nuxtjs/composition-api';
 
 export default defineComponent({
+  name: 'Author',
   props: {
     author: {
       type: Object,

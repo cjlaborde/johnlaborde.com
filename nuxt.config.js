@@ -95,6 +95,11 @@ export default {
     },
   },
 
+  generate: {
+    // choose to suit your project
+    interval: 2000,
+  },
+
   server: {
     host: '0.0.0.0',
     port: 5500,

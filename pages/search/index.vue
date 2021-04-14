@@ -26,6 +26,7 @@ import {
 } from '@nuxtjs/composition-api';
 
 export default defineComponent({
+  name: 'SearchPage',
   setup() {
     const { $content } = useContext();
     const articles = ref<any>([]);

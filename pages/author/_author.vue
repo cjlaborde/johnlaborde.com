@@ -12,6 +12,7 @@
 import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api';
 
 export default defineComponent({
+  name: 'Author',
   setup() {
     const { $content, route } = useContext();
 

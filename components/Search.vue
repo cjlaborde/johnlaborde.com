@@ -23,6 +23,7 @@
 import { defineComponent, useRouter, ref } from '@nuxtjs/composition-api';
 
 export default defineComponent({
+  name: 'Search',
   setup() {
     const route = useRouter();
     const searchQuery = ref('');

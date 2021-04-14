@@ -57,6 +57,7 @@ import {
 import global from '@/utils/global';
 import getSiteMeta from '@/utils/getSiteMeta';
 export default defineComponent({
+  name: 'Article',
   setup() {
     const { $content, params, route } = useContext();
     const slug = computed(() => params.value.slug);

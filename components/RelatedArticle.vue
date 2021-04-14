@@ -30,6 +30,7 @@
 import { defineComponent } from '@nuxtjs/composition-api';
 
 export default defineComponent({
+  name: 'RelatedArticles',
   props: {
     relatedArticles: {
       type: Object,

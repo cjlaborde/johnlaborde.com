@@ -43,6 +43,7 @@ import {
 import global from '@/utils/global';
 
 export default defineComponent({
+  name: 'About',
   setup() {
     const { $content } = useContext();
     const author = ref(global.author);
