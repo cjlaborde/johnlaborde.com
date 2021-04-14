@@ -52,7 +52,7 @@ export default defineComponent({
   name: 'ArticleList',
   props: {
     articles: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
