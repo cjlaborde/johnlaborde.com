@@ -35,10 +35,6 @@ export default defineComponent({
 
     const { fetch } = useFetch(async () => {
       articles.value = [];
-      // if (searchQuery.value === '') {
-      //   articles.value = [];
-      //   return;
-      // }
       if (searchQuery.value?.length > 0) {
         articles.value = await $content('articles')
           .only(['title', 'description', 'image', 'slug', 'published', 'tags'])

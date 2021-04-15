@@ -13,7 +13,7 @@ public_folder: /img
 # Docs: https://www.netlifycms.org/docs/configuration-options/#collections
 collections:
   label: 'Blog'
-  folder: 'content/blog'
+  folder: 'content/articles'
   create: true
   format: 'frontmatter'
   slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
