@@ -34,15 +34,18 @@ export default defineComponent({
     const searchQuery = computed(() => route.value.query.keyword);
 
     const { fetch } = useFetch(async () => {
-      if (searchQuery.value === '') {
-        articles.value = [];
-        return;
+      articles.value = [];
+      // if (searchQuery.value === '') {
+      //   articles.value = [];
+      //   return;
+      // }
+      if (searchQuery.value?.length > 0) {
+        articles.value = await $content('articles')
+          .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
+          .sortBy('published', 'desc')
+          .search(searchQuery.value)
+          .fetch();
       }
-      articles.value = await $content('articles')
-        .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
-        .sortBy('published', 'desc')
-        .search(searchQuery.value)
-        .fetch();
     });
 
     watch(searchQuery, () => {
