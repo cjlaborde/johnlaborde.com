@@ -2,7 +2,7 @@
 title: Projects created by John La Borde
 description: 'Projects created by software developer John La Borde.'
 image: 'https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4'
-tags: ['John La Borde', 'Software developer', 'web developer', 'PHP', 'Nuxt', 'vue', 'real estate', 'real astra', 'line real', 'nuxtCommerce', 'Emails Plus']
+tags: ['Software developer', 'web developer', 'PHP', 'Nuxt', 'vue', 'real estate', 'real astra', 'line real', 'nuxtCommerce', 'Emails Plus']
 published: '2021-03-23'
 ---
 
@@ -14,7 +14,7 @@ Business sites require a unique form of engineering.
 2) Sites need to be designed with the User mindset in mind. they have to be easy to use and as minimum mental overload for your clients to be accessible to all ages. In this modern world where attention is a premium. Having a badly designed site will servery reduce your ROI.
 3) Test and measure every detail for constantly evolving to create a quality application.
 
-#### Real Astra
+#### Lodging
 Application to operate an online marketplace for lodging, primarily homestays for vacation rentals, and tourism activities.  Build with laravel and vue. It includes a map search to lodgings based on room type, the number of people to accommodate, bedrooms, bathrooms, amenities, price, location. Users can book properties and be charged using stripe.
 Property owners can list their properties and receive their payment once a user books a property.
 
