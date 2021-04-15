@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/search", {data:[{}],fetch:{"SearchPage:0":{articles:[],fetchState:{error:null,pending:false,timestamp:1618482133509}}},mutations:void 0});
