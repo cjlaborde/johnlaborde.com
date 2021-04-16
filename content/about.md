@@ -6,5 +6,5 @@ tags: ['porfolio', 'about', 'software developer']
 published: '2021-03-23'
 ---
 
-I worked for years as a marketeer and business owner. Then wanted to make a website the exact way I envision it and became obsessed with learning web development. Years latter I became a competent web developer than has a strong foundation in business and marketing.
-I have the skill set to combine both business and marketing skills. My current prefered tools are laravel for creating the backend api and nuxt/vue.js for the front end. My main languages are php and javascript. I do my development using docker.
+I worked for years as a marketeer and business owner. Then wanted to make a website the exact way I envision it and became obsessed with learning web development. Years later I became a competent web developer that has a strong foundation in business and marketing.
+I have the skill set to combine both business and marketing skills with web development. My current preferred tools are laravel for creating the backend API and nuxt/vue.js for the front end. My main languages are PHP and Javascript.

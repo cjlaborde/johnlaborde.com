@@ -8,7 +8,7 @@
         <div class="flex-none sm:flex">
           <!-- Image -->
           <img
-            class="h-32 w-32 lg:h-48 lg:w-48 mx-auto mb-5"
+            class="h-32 w-32 lg:h-48 lg:w-48 mx-auto mb-5 md:grayscale md:hover:filter-reset md:focus:filter-reset transition-all duration-200 ease-in"
             :src="avatar"
             alt="display picture"
           />
@@ -20,6 +20,8 @@
               </div>
               <div class="text-lg text-left prose text-gray-500">
                 <nuxt-content :document="about" />
+                <WebDevelopmentTools />
+
                 <h4 class="font-medium mt-10">Contact me at</h4>
               </div>
               <div class="flex justify-left space-x-6 md:order-2">
@@ -44,6 +46,7 @@ import global from '@/utils/global';
 
 export default defineComponent({
   name: 'About',
+
   setup() {
     const { $content } = useContext();
     const author = ref(global.author);
@@ -54,3 +57,15 @@ export default defineComponent({
   },
 });
 </script>
+
+<style scoped>
+/* @variants hover, focus, responsive {
+  .grayscale {
+    filter: grayscale(100%);
+  }
+
+  .filter-reset {
+    filter: none;
+  }
+} */
+</style>

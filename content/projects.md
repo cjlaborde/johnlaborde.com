@@ -14,7 +14,7 @@ Business sites require a unique form of engineering.
 2) Sites need to be designed with the User mindset in mind. they have to be easy to use and as minimum mental overload for your clients to be accessible to all ages. In this modern world where attention is a premium. Having a badly designed site will servery reduce your ROI.
 3) Test and measure every detail for constantly evolving to create a quality application.
 
-#### Lodging
+#### Realastra
 Application to operate an online marketplace for lodging, primarily homestays for vacation rentals, and tourism activities.  Build with laravel and vue. It includes a map search to lodgings based on room type, the number of people to accommodate, bedrooms, bathrooms, amenities, price, location. Users can book properties and be charged using stripe.
 Property owners can list their properties and receive their payment once a user books a property.
 
@@ -23,6 +23,3 @@ Online real estate marketplace API build with laravel with a front-end build wit
 
 #### NuxtCommerce
 E-Commerce API build with Laravel and the front end is build using nuxt.js. The API is light and ideal for small businesses that include less than 99 products. The API has a strong focus on speed and security.
-
-#### Emails Plus
-A SaaS email marketing app that helps you manage multiple online marketing campaigns in one place. Include schedule emails and email management tools.
