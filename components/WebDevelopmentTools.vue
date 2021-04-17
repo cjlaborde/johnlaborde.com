@@ -131,6 +131,46 @@
         >
           <Nginx />
         </a>
+        <a
+          href="https://www.nginx.com/"
+          target="_new"
+          alt="MySQL"
+          class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
+        >
+          <MySQL />
+        </a>
+        <a
+          href="https://www.nginx.com/"
+          target="_new"
+          alt="PostgreSQL"
+          class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
+        >
+          <PostgreSQL />
+        </a>
+        <a
+          href="https://www.nginx.com/"
+          target="_new"
+          alt="Ngninx"
+          class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
+        >
+          <Postman />
+        </a>
+        <a
+          href="https://www.nginx.com/"
+          target="_new"
+          alt="Ngninx"
+          class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
+        >
+          <PHPStorm />
+        </a>
+        <a
+          href="https://www.nginx.com/"
+          target="_new"
+          alt="Ngninx"
+          class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
+        >
+          <VSCode />
+        </a>
       </div>
     </div>
   </div>
@@ -154,6 +194,11 @@ import PHPUNIT from '~/components/svg/PHPUNIT.vue';
 import Jest from '~/components/svg/Jest.vue';
 import Linux from '~/components/svg/Linux.vue';
 import Nginx from '~/components/svg/Nginx.vue';
+import MySQL from '~/components/svg/MySQL.vue';
+import PostgreSQL from '~/components/svg/PostgreSQL.vue';
+import Postman from '~/components/svg/Postman.vue';
+import PHPStorm from '~/components/svg/PHPStorm.vue';
+import VSCode from '~/components/svg/VSCode.vue';
 
 export default defineComponent({
   name: 'WebDevelopmentTools',
@@ -174,6 +219,11 @@ export default defineComponent({
     Jest,
     Linux,
     Nginx,
+    MySQL,
+    PostgreSQL,
+    Postman,
+    PHPStorm,
+    VSCode,
   },
 });
 </script>
