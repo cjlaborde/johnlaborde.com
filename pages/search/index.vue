@@ -1,5 +1,5 @@
 <template>
-  <div v-if="articles">
+  <div v-if="searchQuery && articles">
     <div>
       <h3 class="font-semibold text-gray-600 text-lg mb-10">
         Search results: ({{ articles.length }})
@@ -39,6 +39,13 @@ export default {
         .search(searchQuery)
         .fetch();
     },
+  },
+  async mounted() {
+    this.articles = await this.$content('articles')
+      .only(['title', 'description', 'image', 'slug', 'published', 'tags'])
+      .sortBy('published', 'desc')
+      .search(this.searchQuery)
+      .fetch();
   },
 };
 </script>
