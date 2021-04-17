@@ -33,7 +33,7 @@ export default defineComponent({
   name: 'RelatedArticles',
   props: {
     relatedArticles: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },

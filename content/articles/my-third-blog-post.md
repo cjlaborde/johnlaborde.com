@@ -39,12 +39,6 @@ Welcome to my third blog post using content module
   This is HTML inside markdown that has a class of note
 </div>
 
-<info-box>
-  <template #info-box>
-    This is a vue component inside markdown using slots
-  </template>
-</info-box>
-
 <!-- <author :author="author"></author> -->
 
 export default {

@@ -3,28 +3,34 @@
     <NuxtLink to="/articles" class="font-bold text-gray-800 text-xl mb-10">
       Back to All Articles
     </NuxtLink>
+    <!-- {{ author }} -->
     <Author :author="articles[0].author" class="text-left px-4 lg:px-1/4" />
     <ArticleList :articles="articles" />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent, useContext, useAsync } from '@nuxtjs/composition-api';
+<script>
+export default {
+  async asyncData({ $content, params }) {
+    const articles = await $content('articles', params.slug)
+      .where({
+        'author.name': {
+          $regex: [params.author, 'i'],
+        },
+      })
+      .without('body')
+      .sortBy('createdAt', 'asc')
+      .fetch();
 
-export default defineComponent({
-  name: 'Author',
-  setup() {
-    const { $content, route } = useContext();
-
-    const articles = useAsync(() =>
-      $content('articles')
-        .where({ 'author.name': route.value.params.author })
-        .without('body')
-        .sortBy('createdAt', 'asc')
-        .fetch<any>()
-    );
-
-    return { articles };
+    return {
+      articles,
+    };
   },
-});
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      return new Date(date).toLocaleDateString('en', options);
+    },
+  },
+};
 </script>
