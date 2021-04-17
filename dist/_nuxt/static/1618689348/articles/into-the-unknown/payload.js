@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/into-the-unknown", {data:[{}],fetch:{},mutations:void 0});

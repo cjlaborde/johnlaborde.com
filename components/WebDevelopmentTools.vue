@@ -132,7 +132,7 @@
           <Nginx />
         </a>
         <a
-          href="https://www.nginx.com/"
+          href="https://www.mysql.com/"
           target="_new"
           alt="MySQL"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
@@ -140,7 +140,7 @@
           <MySQL />
         </a>
         <a
-          href="https://www.nginx.com/"
+          href="https://www.postgresql.org/"
           target="_new"
           alt="PostgreSQL"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
@@ -148,25 +148,25 @@
           <PostgreSQL />
         </a>
         <a
-          href="https://www.nginx.com/"
+          href="https://www.postman.com/"
           target="_new"
-          alt="Ngninx"
+          alt="Postman"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
           <Postman />
         </a>
         <a
-          href="https://www.nginx.com/"
+          href="https://www.jetbrains.com/phpstorm/"
           target="_new"
-          alt="Ngninx"
+          alt="PHPStorm"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
           <PHPStorm />
         </a>
         <a
-          href="https://www.nginx.com/"
+          href="https://code.visualstudio.com/"
           target="_new"
-          alt="Ngninx"
+          alt="VSCode"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
           <VSCode />

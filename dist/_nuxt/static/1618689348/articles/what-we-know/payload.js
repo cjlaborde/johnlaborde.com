@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/articles/what-we-know", {data:[{}],fetch:{},mutations:void 0});

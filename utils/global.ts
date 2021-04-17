@@ -3,8 +3,7 @@ export default {
   siteName: '',
   author: 'John La Borde',
   email: 'mailto:info@johnlaborde.com',
-  avatar:
-    'https://avatars.githubusercontent.com/u/40572114?s=400&u=c7d9950aceac671cb565a7158ac1890bd3d0c03a&v=4',
+  avatar: 'img/john.jpeg',
   avatarAlt: 'John La Borde display picture',
   twitterHandle: '@johnlaborde',
   twitter: '',
