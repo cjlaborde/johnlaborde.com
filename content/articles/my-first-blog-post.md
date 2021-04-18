@@ -9,7 +9,7 @@ author:
   name: John
   bio: I work in the cloud with a strong focus on serverless and API lifecycle. Pushing the limits on API design, standardization, and automation.
   profession: Full Stack Developer
-  image: /img/john.jpeg
+  image: john.jpeg
 ---
 
 

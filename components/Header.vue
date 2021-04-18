@@ -8,7 +8,7 @@
               <h3 class="text-lg">{{ siteName }}</h3>
               <img
                 class="ml-4 h-8 w-8 rounded-full"
-                :src="avatar"
+                :src="require(`~/assets/avatars/${avatar}`)"
                 :alt="avatarAlt"
               />
             </div>
@@ -81,7 +81,7 @@
             <div class="flex-shrink-0">
               <img
                 class="h-10 w-10 rounded-full"
-                :src="avatar"
+                :src="require(`~/assets/avatars/${avatar}`)"
                 :alt="avatarAlt"
               />
             </div>
@@ -99,7 +99,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from '@nuxtjs/composition-api';
+import { defineComponent, ref, useContext } from '@nuxtjs/composition-api';
 import global from '@/utils/global';
 import OpenMenu from '~/components/svg/OpenMenu.vue';
 import CloseMenu from '~/components/svg/CloseMenu.vue';

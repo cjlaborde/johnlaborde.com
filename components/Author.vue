@@ -3,7 +3,7 @@
     <div class="w-32 min-w-max-content">
       <NuxtLink :to="`/author/${author.name}`">
         <img
-          :src="author.image"
+          :src="require(`~/assets/avatars/${author.image}`)"
           class="h-12 w-12 md:h-16 md:w-16 rounded-full"
         />
       </NuxtLink>

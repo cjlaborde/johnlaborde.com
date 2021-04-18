@@ -9,7 +9,7 @@
           <!-- Image -->
           <img
             class="h-32 w-32 lg:h-48 lg:w-48 mx-auto mb-5 md:grayscale md:hover:filter-reset md:focus:filter-reset transition-all duration-200 ease-in"
-            :src="avatar"
+            :src="require(`~/assets/avatars/${avatar}`)"
             alt="display picture"
           />
           <div class="pl-5 lg:pl-15">
