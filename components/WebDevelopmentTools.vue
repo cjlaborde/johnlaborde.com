@@ -6,6 +6,7 @@
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/HTML"
           target="_new"
+          aria-label="HTML"
           alt="HTML"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -14,6 +15,7 @@
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/CSS"
           target="_new"
+          aria-label="CSS"
           alt="CSS"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -22,6 +24,7 @@
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
           target="_new"
+          aria-label="Javascript"
           alt="Javascript"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -30,6 +33,7 @@
         <a
           href="https://www.typescriptlang.org/"
           target="_new"
+          aria-label="Typescript"
           alt="Typescript"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -38,6 +42,7 @@
         <a
           href="https://www.php.net/"
           target="_new"
+          aria-label="PHP"
           alt="PHP"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -46,6 +51,7 @@
         <a
           href="https://laravel.com"
           target="_new"
+          aria-label="Laravel"
           alt="Laravel"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -54,6 +60,7 @@
         <a
           href="https://phpunit.de/"
           target="_new"
+          aria-label="PHPunit"
           alt="PHPunit"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -62,6 +69,7 @@
         <a
           href="https://nodejs.org/en/"
           target="_new"
+          aria-label="NodeJS"
           alt="NodeJS"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -70,6 +78,7 @@
         <a
           href="https://vuejs.org/"
           target="_new"
+          aria-label="VueJS"
           alt="VueJS"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -78,6 +87,7 @@
         <a
           href="https://nuxtjs.org/"
           target="_new"
+          aria-label="NUXTJS"
           alt="NUXTJS"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -86,6 +96,7 @@
         <a
           href="https://jestjs.io/"
           target="_new"
+          aria-label="JestJS"
           alt="JestJS"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -94,6 +105,7 @@
         <a
           href="https://tailwindcss.com/"
           target="_new"
+          aria-label="TailwindCSS"
           alt="TailwindCSS"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -102,6 +114,7 @@
         <a
           href="https://vuetifyjs.com/en/"
           target="_new"
+          aria-label="Vuetify"
           alt="Vuetify"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -110,6 +123,7 @@
         <a
           href="https://www.docker.com/"
           target="_new"
+          aria-label="Docker"
           alt="Docker"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -118,6 +132,7 @@
         <a
           href="https://www.linux.com/what-is-linux/"
           target="_new"
+          aria-label="Linux"
           alt="Linux"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -126,6 +141,7 @@
         <a
           href="https://www.nginx.com/"
           target="_new"
+          aria-label="Ngninx"
           alt="Ngninx"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -134,6 +150,7 @@
         <a
           href="https://www.mysql.com/"
           target="_new"
+          aria-label="MySQL"
           alt="MySQL"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -142,6 +159,7 @@
         <a
           href="https://www.postgresql.org/"
           target="_new"
+          aria-label="PostgreSQL"
           alt="PostgreSQL"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -150,6 +168,7 @@
         <a
           href="https://www.postman.com/"
           target="_new"
+          aria-label="Postman"
           alt="Postman"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -158,6 +177,7 @@
         <a
           href="https://www.jetbrains.com/phpstorm/"
           target="_new"
+          aria-label="PHPStorm"
           alt="PHPStorm"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
@@ -166,6 +186,7 @@
         <a
           href="https://code.visualstudio.com/"
           target="_new"
+          aria-label="VSCode"
           alt="VSCode"
           class="h-full lg_h-20 p-2 lg_p-4 shadow-hover md:hover:shadow-inner shadow transition-all duration-200 ease-in mr-4 mb-4"
         >
