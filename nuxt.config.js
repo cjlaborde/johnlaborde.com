@@ -70,7 +70,13 @@ export default {
     '@nuxtjs/sitemap',
     // https://github.com/nuxt-community/dayjs-module
     '@nuxtjs/dayjs',
+    // https://github.com/nuxt-community/robots-module
+    '@nuxtjs/robots',
   ],
+  robots: {
+    UserAgent: '*',
+    Disallow: '/admin',
+  },
 
   dayjs: {
     locales: ['en'],
